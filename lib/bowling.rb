@@ -49,6 +49,15 @@ class Bowling
       end
       # 合計をフレームごとに記録しておく
       @frame_score << @total_score
+      # 第一フレームの点数
+      # [5, 4]
+      # 第二フレームの点数
+      # [2, 4]
+      # 第三フレームの点数
+      # [8, 0]
+
+      # フレームごとの点数
+      # [9, 15, 23]
     end
   end
 
@@ -82,5 +91,4 @@ class Bowling
       10 + @scores[index].inject(:+)
     end
   end
-
 end
